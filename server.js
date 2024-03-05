@@ -6,7 +6,9 @@ const Food = require('./food');
 
 const app = express();
 const port = 3000;
+const cors = require('cors');
 
+app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
